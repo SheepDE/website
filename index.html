@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheep Services - Minecraft Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="discord-link">
+                <a href="https://discord.gg/sheepstore" target="_blank">discord.gg/sheepstore</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title" id="hero-title"></h1>
+            <p class="hero-subtitle">Professional tools for managing your Minecraft accounts</p>
+            <a href="#tools" class="hero-btn">Explore Tools</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure</h3>
+                    <p>All processing happens in your browser</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast</h3>
+                    <p>Instant results with real-time updates</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✓</div>
+                    <h3>Free</h3>
+                    <p>No registration or subscriptions required</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="tools" id="tools">
+        <div class="container">
+            <!-- TOTP Tool -->
+            <div class="tool-box">
+                <h2>🔑 TOTP Generator</h2>
+                <p class="tool-desc">Generate 2FA codes for Microsoft accounts</p>
+                
+                <div class="input-group">
+                    <label>Secret Key</label>
+                    <input type="text" id="totp-secret" placeholder="Enter your secret key">
+                </div>
+                
+                <div class="totp-output" id="totp-output">
+                    <p>Enter your secret key above</p>
+                </div>
+                
+                <div class="totp-timer" id="totp-timer" style="display: none;">
+                    <span id="timer-text">30s</span>
+                </div>
+            </div>
+
+            <!-- Server Status Checker -->
+            <div class="tool-box">
+                <h2>🌐 Server Status</h2>
+                <p class="tool-desc">Check if a Minecraft server is online</p>
+                
+                <div class="input-group">
+                    <label>Server IP</label>
+                    <input type="text" id="server-ip" placeholder="e.g., hypixel.net">
+                </div>
+                
+                <button class="check-btn" id="server-btn">Check Server</button>
+                
+                <div class="server-output" id="server-output" style="display: none;"></div>
+            </div>
+
+            <!-- Skin Downloader -->
+            <div class="tool-box">
+                <h2>🎨 Skin Viewer</h2>
+                <p class="tool-desc">View and download Minecraft skins</p>
+                
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text" id="skin-username" placeholder="e.g., Notch">
+                </div>
+                
+                <button class="check-btn" id="skin-btn">View Skin</button>
+                
+                <div class="skin-output" id="skin-output" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Sheep Services</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
